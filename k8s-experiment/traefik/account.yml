@@ -1,0 +1,6 @@
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: traefik-account
+
+#创建用户，将绑定至角色，用于使用API的权限控制  
