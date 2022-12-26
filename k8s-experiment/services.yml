@@ -3,10 +3,9 @@ kind: Service
 metadata:
   name: nginx-service
 spec:
-  type: ClusterIP #NodePort/ClusterIP/LoadBalancer/ExternalName
+  type: LoadBalancer
   selector:
     app: nginx
   ports:
   - name: http
     port: 80
-    targetPort: 80
